@@ -1,19 +1,24 @@
 # 🧪 Desafio técnico - Utizando Cypress para realizar testes de API Rest
 
 ## 📖 Desafio 1: Testar o verbo + endpoints abaixo:
-GET	https://jsonplaceholder.typicode.com/posts
-GET	https://jsonplaceholder.typicode.com/posts/1
-GET	https://jsonplaceholder.typicode.com/posts/1/comments
-GET	https://jsonplaceholder.typicode.com/comments?postId=1
-POST	https://jsonplaceholder.typicode.com/posts
-PUT	https://jsonplaceholder.typicode.com/posts/1
-PATCH	https://jsonplaceholder.typicode.com/posts/1
-DELETE	https://jsonplaceholder.typicode.com/posts/1
+
+| Verbo | BaseUrl | Endpoint |
+|-------|---------|----------|
+| GET | https://jsonplaceholder.typicode.com | /posts |
+| GET | https://jsonplaceholder.typicode.com | /posts/1 |
+| GET | https://jsonplaceholder.typicode.com | /posts/1/comments |
+| GET | https://jsonplaceholder.typicode.com | /comments?postId=1 |
+| POST | https://jsonplaceholder.typicode.com | /posts |
+| PUT | https://jsonplaceholder.typicode.com | /posts/1 |
+| PATCH | https://jsonplaceholder.typicode.com | /posts/1 |
+| DELETE | https://jsonplaceholder.typicode.com | /posts/1 |
 
 ## 📖 Desafio 2: Realize testes para os endpoints listado acima que valide os seguintes aspectos:
-Validar o status code;
-Validar o tempo de resposta (se for maior que 500ms o teste deve falhar);
-Validar o corpo de resposta a nível de schema;
+- Validar o status code
+- Validar o tempo de resposta (se for maior que 500ms o teste deve falhar)
+- Validar o corpo de resposta a nível de schema
+
+---
 
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Node.js](https://img.shields.io/badge/Node.js-%3E%3D%2016-brightgreen)](https://nodejs.org)
