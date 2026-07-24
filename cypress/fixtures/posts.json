@@ -1,0 +1,37 @@
+{
+  "newPost": {
+    "title": "Test Post Title",
+    "body": "Test Post Body",
+    "userId": 1
+  },
+  "updatedPost": {
+    "id": 1,
+    "title": "Updated Post Title",
+    "body": "Updated Post Body",
+    "userId": 1
+  },
+  "patchPost": {
+    "title": "Patched Post Title"
+  },
+  "postSchema": {
+    "type": "object",
+    "properties": {
+      "userId": { "type": "number" },
+      "id": { "type": "number" },
+      "title": { "type": "string" },
+      "body": { "type": "string" }
+    },
+    "required": ["userId", "id", "title", "body"]
+  },
+  "commentSchema": {
+    "type": "object",
+    "properties": {
+      "postId": { "type": "number" },
+      "id": { "type": "number" },
+      "name": { "type": "string" },
+      "email": { "type": "string" },
+      "body": { "type": "string" }
+    },
+    "required": ["postId", "id", "name", "email", "body"]
+  }
+}

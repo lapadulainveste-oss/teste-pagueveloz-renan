@@ -1,0 +1,20 @@
+{
+  "name": "cypress",
+  "version": "1.0.0",
+  "description": "API de automacao com cypress",
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "cy:run:api": "cypress run --spec 'cypress/e2e/api/**/*.cy.js'",
+    "cy:run:headed": "cypress run --headed",
+    "cy:run:chrome": "cypress run --browser chrome",
+    "cy:debug": "cypress run --headed --no-exit"
+  },
+  "keywords": ["cypress", "api", "testing"],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "ajv": "^8.20.0",
+    "cypress": "^15.19.0"
+  }
+}

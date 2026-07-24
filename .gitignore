@@ -1,0 +1,30 @@
+# Dependências
+node_modules/
+package-lock.json
+
+# Logs
+logs/
+*.log
+
+# Cypress
+cypress/videos/
+cypress/screenshots/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Variáveis de ambiente
+.env
+.env.local
+.env.*.local
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Distribuição
+dist/
+build/
