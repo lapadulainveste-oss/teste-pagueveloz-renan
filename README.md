@@ -75,6 +75,10 @@ npm run cy:open
 ```bash
 npm run cy:run
 ```
+### Gerar relatório
+```bash
+npm run cy:report
+```
 
 ### Apenas testes de API
 ```bash

@@ -34,12 +34,12 @@ Cypress.Commands.add('requestAPI', (method, endpoint, options = {}) => {
     failOnStatusCode: false,
     ...options
   })
-})
+}) // Comando para realizar requisições à API com base na URL base definida no cypress.config.js
 
 Cypress.Commands.add('validateResponseTime', (response, maxTime = 500) => {
   expect(response.duration).to.be.lessThan(maxTime)
-})
+}) // Comando para validar o tempo de resposta da API
 
 Cypress.Commands.add('validateStatusCode', (response, expectedStatus) => {
   expect(response.status).to.equal(expectedStatus)
-})
+}) // Comando para validar o status code da resposta da API
