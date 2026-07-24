@@ -6,15 +6,23 @@
     "cy:open": "cypress open",
     "cy:run": "cypress run",
     "cy:run:api": "cypress run --spec 'cypress/e2e/api/**/*.cy.js'",
+    "cy:report": "cypress run --spec 'cypress/e2e/api/**/*.cy.js' && node_modules/.bin/mochawesome-merge cypress/reports/mochawesome-report/*.json -o cypress/reports/mochawesome-report/mochawesome.json && node_modules/.bin/mochawesome-report-generator cypress/reports/mochawesome-report/mochawesome.json",
     "cy:run:headed": "cypress run --headed",
     "cy:run:chrome": "cypress run --browser chrome",
     "cy:debug": "cypress run --headed --no-exit"
   },
-  "keywords": ["cypress", "api", "testing"],
+  "keywords": [
+    "cypress",
+    "api",
+    "testing"
+  ],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "ajv": "^8.20.0",
-    "cypress": "^15.19.0"
+    "cypress": "^15.19.0",
+    "mochawesome": "^7.1.4",
+    "mochawesome-merge": "^5.1.1",
+    "mochawesome-report-generator": "^6.3.2"
   }
 }
