@@ -212,4 +212,4 @@ MIT License - Veja [LICENSE](LICENSE) para detalhes.
 
 ---
 
-**Desenvolvido como exemplo de boas práticas em automação de testes de API**
+**Desenvolvido por Renan Lapadula**
